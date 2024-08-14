@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/staff-snake-solid.svg"
+      type="image/x-icon"
+    />
+    <title>Snakes</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <h1><i class="fa-solid fa-staff-snake"></i>NAKES</h1>
+      <div id="gameBoard"></div>
+      <div id="game-controls">
+        <div id="speed">
+          Speed:
+          <input type="range" min="1" max="5" class="slider" id="speed-range" />
+        </div>
+        <div id="score"></div>
+        <div id="high-score"></div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <p id="modal-text"></p>
+        <span class="close">&times;</span>
+      </div>
+    </div>
+  </body>
+  <script src="./js/script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/70cac85834.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

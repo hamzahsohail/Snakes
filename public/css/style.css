@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../img/bg.jpg");
+  background-size: 100vw 100vh;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.game-container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#gameBoard {
+  width: 75vmin;
+  height: 75vmin;
+
+  border: 2px solid white;
+  border-radius: 2px;
+
+  display: grid;
+  grid-template-rows: repeat(15, 1fr);
+  grid-template-columns: repeat(15, 1fr);
+}
+
+#game-controls {
+  display: flex;
+  width: 75vmin;
+  justify-content: space-evenly;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;  
+  margin: auto;
+  padding: 20px;
+
+  position: relative;
+  top: 25%;
+
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 50%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.snake-head {
+  background-color: darkgreen;
+  border-radius: 2px;
+}
+
+.snake-body {
+  background-color: green;
+  border-radius: 100%;
+}
+
+.food {
+  content: url(../img/apple-whole-solid.svg);
+}
